@@ -1,0 +1,56 @@
+#body{
+    background:url("../imags/0.jpg") no-repeat ;
+    -webkit-background-size: cover;
+
+}
+/*收起的时候 */
+.fold{
+    top: 20px;
+    height: 5px;
+    transform:translate(-50%);
+}
+/*伸展的时候 */
+.stretch{
+    top: 50%;
+    transform:translate(-50%,-50%);
+    height: 200px;
+}
+#box{
+    position: absolute;
+    width: 40%;
+    border-radius: 1em;
+    background-color: rgba(0,0,0,0.2);
+    left: 50%;
+
+    padding: 10px 0;
+    transition:all 1s ease 0;
+}
+.circle{
+    background-color: #ffffff;
+    position: absolute;
+    right: 5px;
+    top: 4px;
+    border: 5px solid #ffffff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+/*三角形 */
+#san{
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+}
+.santop{
+    border-top: 9px solid #aaa;
+}
+.sanbottom{
+    border-bottom: 9px solid #aaa;
+}
+/*中间的文字 */
+#main{
+    color: #ffffff;
+
+}
+head{
+
+
+}

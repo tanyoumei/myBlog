@@ -1,0 +1,71 @@
+.t-container{
+    width: 80%;
+    /*background-color: #ccc;*/
+    min-height: 550px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid #dddddd;
+    box-shadow: 0px 0px 1em 0.5em #ddd;
+}
+.t-container header{
+    background-color: #e5132e;
+    height: 10em;
+    width: 100%;
+    position: relative;
+}
+.t-container header img{
+    margin-left: 3em;
+    margin-top: 1em;
+    height: 8em;
+    width: 8em;
+}
+section .name{
+    position: absolute;
+    top: 1.4em;
+    left: 5.5em;
+    color: rgba(255,255,255,0.93);
+    font-size: 2.5em;
+    font-weight: bold;
+}
+.name small{
+    margin-left: 1em;
+    font-size: 0.7em;
+    font-weight: bold;
+}
+.first{
+    position: relative;
+}
+.first .san{
+    position: absolute;
+    left: 5.5em;
+    border-top: 20px solid #e5132e;
+    border-right: 20px solid transparent;
+    border-left:20px solid transparent;
+}
+.first .line{
+    position: absolute;
+    left: 6.72em;
+    background-color: #e5132e;
+    height: 400px;
+    width: 2px;
+}
+.first .line .circle {
+    position: absolute;
+    left: -1.2em;
+    top: 7em;
+    background-color: #e5132e;
+    width: 40px;
+    height: 40px;
+    border-width: 0px;
+    border-radius: 50%;
+}
+.first section{
+    position: absolute;
+    height: 200px;
+    width: 500px;
+    top: 50px;
+    left: 10em;
+    background-color: #dce6f0;
+
+}

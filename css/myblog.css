@@ -1,0 +1,34 @@
+#body{
+    background-image: url("../images/bg-blog.png");
+    /*background-image: linear-gradient(120deg, #155799, #159957);*/
+    -webkit-background-size: cover;
+    padding: 20px;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+    color: inherit;
+
+}
+
+@font-face {
+    font-family: shaonv;/*定义font的名字*/
+    src: url("../font/women.ttf");/*把下载的字体文件引入进来*/
+}
+nav ul{
+    list-style: none;
+}
+
+nav ul li figure img{
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+}
+nav ul li figure a{
+    font-family: shaonv;
+    font-size: 20px;
+    color: #000000;
+    display: inline-block;
+}

@@ -2,21 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c5aaf14-ee95-48e2-a401-a1c3059b106f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/apple.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/baba.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/ball.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/bg-blog.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/pencil.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/unbrella.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/font/women.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/myblog.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myblog.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="$PROJECT_DIR$/.idea/.name" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/tany.css" afterPath="$PROJECT_DIR$/css/tany.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="G:\WSlocation\myBlog\.idea\myBlog.iml" afterPath="$PROJECT_DIR$/.idea/show.iml" />
+      <change type="MOVED" beforePath="G:\WSlocation\myBlog\myblog.html" afterPath="$PROJECT_DIR$/nav.html" />
     </list>
     <ignored path="myBlog.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -43,14 +31,14 @@
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.53370786" vertical-offset="255" max-vertical-offset="1566">
-              <caret line="20" column="38" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
+              <caret line="20" column="59" selection-start-line="20" selection-start-column="59" selection-end-line="20" selection-end-column="59" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="myblog.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/myblog.html">
+      <file leaf-file-name="nav.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/nav.html">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-12.0" vertical-offset="405" max-vertical-offset="1188">
               <caret line="31" column="39" selection-start-line="31" selection-start-column="39" selection-end-line="31" selection-end-column="39" />
@@ -239,7 +227,11 @@
       <created>1443848233551</created>
       <updated>1443848233551</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="博客目录完成">
+      <created>1443852557054</created>
+      <updated>1443852557054</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -283,7 +275,8 @@
     </option>
     <MESSAGE value="flex 布局" />
     <MESSAGE value="首页完成" />
-    <option name="LAST_COMMIT_MESSAGE" value="首页完成" />
+    <MESSAGE value="博客目录完成" />
+    <option name="LAST_COMMIT_MESSAGE" value="博客目录完成" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -369,7 +362,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/myblog.html">
+    <entry file="file://$PROJECT_DIR$/nav.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-12.0" vertical-offset="405" max-vertical-offset="1188">
           <caret line="31" column="39" selection-start-line="31" selection-start-column="39" selection-end-line="31" selection-end-column="39" />
@@ -380,7 +373,7 @@
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.53370786" vertical-offset="255" max-vertical-offset="1566">
-          <caret line="20" column="38" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
+          <caret line="20" column="59" selection-start-line="20" selection-start-column="59" selection-end-line="20" selection-end-column="59" />
           <folding />
         </state>
       </provider>

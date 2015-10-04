@@ -4,7 +4,7 @@
     min-height: 550px;
     margin: 0 auto;
     position: relative;
-    overflow: hidden;
+    /*overflow: hidden;*/
     border: 2px solid #dddddd;
     box-shadow: 0px 0px 1em 0.5em #ddd;
 }
@@ -33,39 +33,97 @@ section .name{
     font-size: 0.7em;
     font-weight: bold;
 }
-.first{
-    position: relative;
-}
-.first .san{
+
+header .san{
     position: absolute;
     left: 5.5em;
+    top: 9.5em;
     border-top: 20px solid #e5132e;
     border-right: 20px solid transparent;
     border-left:20px solid transparent;
 }
-.first .line{
-    position: absolute;
-    left: 6.72em;
-    background-color: #e5132e;
-    height: 400px;
-    width: 2px;
+
+@font-face {
+    font-family: shaonv;
+    src: url("../font/women.ttf");
 }
-.first .line .circle {
+
+.block {
+    height: 250px;
+    overflow: hidden;
+}
+.block .line{
+    position: relative;
+    float: left;
+    display: inline-block;
+    border-right: 2px solid #e5132e;
+    height: 1000px;
+    width: 6.7em;
+    
+}
+.block .line .circle {
+    top: 2em;
     position: absolute;
-    left: -1.2em;
-    top: 7em;
+    right: -1.25em;
     background-color: #e5132e;
     width: 40px;
     height: 40px;
     border-width: 0px;
     border-radius: 50%;
 }
-.first section{
-    position: absolute;
-    height: 200px;
-    width: 500px;
-    top: 50px;
-    left: 10em;
-    background-color: #dce6f0;
-
+.block section{
+    float: left;
+    width:80% ;
+    margin-left: 3em;
+    margin-top: 2em;
 }
+section .s-theme{
+   color: #e5132e;
+    font-family: shaonv;
+    font-size: 1.7em;
+    margin-bottom:20px;
+}
+section .big-other{
+    color: #212121;
+    font-weight: 700;
+    margin: 15px 0;
+    font-size: 18px;
+}
+section .s-other{
+    color: #606060;
+    margin: 10px 0;
+    font-size: 18px;
+}
+section .s-other a{
+    color: deepskyblue;
+}
+section .s-other small{
+    color: #a0a0a0;
+    font-size: 10px;
+}
+
+.first .mar{
+    margin-top: 4em;
+}
+.first .circle{
+    top: 5em !important;
+}
+.second .block{
+    height: 260px;
+}
+
+.squre{
+    display: inline-block;
+    background-color: #727171;
+    height: 15px;
+    width: 15px;
+    transform:rotate(45deg);
+    margin-right: 5px;
+}
+.three .block{
+    height: 900px;
+}
+
+
+
+

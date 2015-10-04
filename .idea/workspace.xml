@@ -359,7 +359,11 @@
       <created>1443969738154</created>
       <updated>1443969738154</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="头像太大   再缩小">
+      <created>1443970430585</created>
+      <updated>1443970430586</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -416,7 +420,8 @@
     <MESSAGE value="背景图还是太大     变更小一些" />
     <MESSAGE value="头像也太大了     变更小一些" />
     <MESSAGE value="博客详细页面完成  并且把自己写的flex页面也用上去了" />
-    <option name="LAST_COMMIT_MESSAGE" value="博客详细页面完成  并且把自己写的flex页面也用上去了" />
+    <MESSAGE value="头像太大   再缩小" />
+    <option name="LAST_COMMIT_MESSAGE" value="头像太大   再缩小" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />

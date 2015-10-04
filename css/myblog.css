@@ -32,3 +32,26 @@ nav ul li figure a{
     color: #000000;
     display: inline-block;
 }
+
+/*博客页的样式*/
+#flex{
+    background-color: #f7f3d1;
+    padding: 20px;
+}
+#flex header{
+    margin: 10px 0 20px 0;
+    font-size: 20px;
+
+}
+
+#flex .logo {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    width: 100px;
+    height: 50px;
+}
+#flex .pic{
+    height: 35px;
+    width: 35px;
+}

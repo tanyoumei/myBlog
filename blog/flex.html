@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>flex布局的思考</title>
+    <link rel="stylesheet" href="../css/myblog.css"/>
+    <link rel="stylesheet" href="../css/flex.css"/>
+
+</head>
+<body id="flex">
+    <section>
+        <header>
+            <img src="../images/unbrella.png" alt="" class="pic"/>
+            下雨天的flex
+
+        </header>
+        <main>
+            <p>正常的box-flex布局</p>
+            <div class="super1">
+                <div class="one"></div>
+                <div class="two"></div>
+            </div>
+            <p> 有一个的宽度固定的布局</p>
+            <div class="super2">
+                <div class="left"></div>
+                <div class="right"></div>
+                <div class="right2"></div>
+            </div>
+            <p>等宽 有间距</p>
+            <div class="super3">
+                <div class="left3"></div>
+                <div class="middle3"></div>
+                <div class="right3"></div>
+            </div>
+
+            <h3>弹性盒子的标签下</h3>
+            <h3>1.box-orient</h3>
+            <p>box-orient用来确定子元素的方向。是横着排还是竖着走。可选的值有：
+
+                horizontal | vertical | inline-axis | block-axis | inherit
+
+            </p>
+            <p> inline-axis(与horizontal表现相同) block-axis（与vertical表现相同）
+
+                父元素不设置高宽的话  父元素会包裹住子元素</p>
+            <div class="squer">
+                <div class="block-s box-orient-horizontal">
+                    <div class="small">1</div>
+                    <div class="small">2</div>
+                    <div class="small">3</div>
+                </div>
+                <div class="block-s box-orient-vertical">
+                    <div class="small">1</div>
+                    <div class="small">2</div>
+                    <div class="small">3</div>
+                </div>
+                <div class="block-s box-orient-inline-axis">
+                    <div class="small">1</div>
+                    <div class="small">2</div>
+                    <div class="small">3</div>
+                </div>
+                <div class="block-s box-orient-block-axis">
+                    <div class="small">1</div>
+                    <div class="small">2</div>
+                    <div class="small">3</div>
+                </div>
+                <div class="block-s box-orient-inline-axis">
+                    <div class="small">1</div>
+                    <div class="small">2</div>
+                    <div class="small">3</div>
+                </div>
+                <div class="block-s box-orient-inhert">
+                    <div class="small">1</div>
+                    <div class="small">2</div>
+                    <div class="small">3</div>
+                </div>
+            </div>
+
+            <h3>2.box-direction</h3>
+            <p>box-direction是用来确定子元素的排列顺序，可选值有：
+
+                normal | reverse | inherit
+            </p>
+            <div class="squer">
+                <div class="block-s box-direction-normal">
+                    <div class="small">1</div>
+                    <div class="small">2</div>
+                    <div class="small">3</div>
+                </div>
+                <div class="block-s box-direction-reverse">
+                    <div class="small">1</div>
+                    <div class="small">2</div>
+                    <div class="small">3</div>
+                </div>
+                <div class="block-s box-direction-inhert">
+                    <div class="small">1</div>
+                    <div class="small">2</div>
+                    <div class="small">3</div>
+                </div>
+            </div>
+
+            <h3>3.box-align</h3>
+            <p>box-align表现为对齐，也就是垂直方向上的排列
+                可选参数有：
+
+                start | end | center | baseline | stretch
+
+
+            </p>
+            <strong>注:stretch 好像没有用啊 没看见拉伸</strong>
+            <div class="squer">
+                <div class="block-s box-align-start">
+                    <div class="small">1</div>
+                    <div class="small special-1">2</div>
+                    <div class="small special-2">3</div>
+                </div>
+                <div class="block-s box-align-end">
+                    <div class="small">1</div>
+                    <div class="small special-1">2</div>
+                    <div class="small special-2">3</div>
+                </div>
+                <div class="block-s box-align-center">
+                    <div class="small">1</div>
+                    <div class="small special-1">2</div>
+                    <div class="small special-2">3</div>
+                </div>
+                <div class="block-s box-align-baseline">
+                    <div class="small">1</div>
+                    <div class="small special-1">2</div>
+                    <div class="small special-2">3</div>
+                </div>
+                <div class="block-s box-align-stretch">
+                    <div class="small">1</div>
+                    <div class="small special-1">2</div>
+                    <div class="small special-2">3</div>
+                </div>
+            </div>
+
+
+            <h3>4.box-pack</h3>
+            <p>box-pack决定了父标签水平方向上的排列，其可选值有：
+
+                start | end | center | justify
+
+            </p>
+            <div class="box-pack">
+                <div class="squer">
+                    <div class="block-s box-pack-start">
+                        <div class="small">1</div>
+                        <div class="small special-1">2</div>
+                        <div class="small special-2">3</div>
+                    </div>
+                    <div class="block-s box-pack-end">
+                        <div class="small">1</div>
+                        <div class="small special-1">2</div>
+                        <div class="small special-2">3</div>
+                    </div>
+                    <div class="block-s box-pack-center">
+                        <div class="small">1</div>
+                        <div class="small special-1">2</div>
+                        <div class="small special-2">3</div>
+                    </div>
+                    <div class="block-s box-pack-justify">
+                        <div class="small">1</div>
+                        <div class="small special-1">2</div>
+                        <div class="small special-2">3</div>
+                    </div>
+                </div>
+            </div>
+
+            <h3>5.box-line</h3>
+            <p>box-lines是用来决定子元素是可以换行显示呢？还是就算挤出还是单行显示。两个可选值：
+
+                single | multiple
+
+            </p>
+            <strong style=" display:inline-block;margin: 0 0 10px 0  "> 注：multiple貌似没有换行 也不知道为什么</strong>
+            <div class="box-line">
+                <div class="squer">
+                    <div class="block-s box-line-single">
+                        <div class="small">1</div>
+                        <div class="small special-1">2</div>
+                        <div class="small special-2">3</div>
+                    </div>
+                    <div class="block-s box-line-multiple">
+                        <div class="small">1</div>
+                        <div class="small special-1">2</div>
+                        <div class="small special-2">3</div>
+                    </div>
+                </div>
+            </div>
+
+            <h3>6.box-flex-group和box-ordinal-group</h3>
+            <p>box-flex-group这个不知道拿来做什么的。
+                box-ordinal-group这个是拿来改变子元素的位置，数值越小位置越靠前
+
+            </p>
+            <div class="squer">
+                <div class="block-s ">
+                    <div class="small box-ordinal-group2">1</div>
+                    <div class="small box-ordinal-group2">2</div>
+                    <div class="small box-ordinal-group1">3</div>
+                </div>
+
+            </div>
+
+
+        </main>
+
+    </section>
+    <img src="../images/logo.png" alt="" class="logo"/>
+
+</body>
+</html>

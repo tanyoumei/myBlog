@@ -32,4 +32,12 @@ nav ul li figure a{
     color: #000000;
     display: inline-block;
 }
+span .tym{
+    background-image: url('../images/fig.png');
+    background-position:-12px -19px;
+    width: 70px;
+    height: 79px;
+
+
+}
 

@@ -1,0 +1,61 @@
+/*博客页的样式*/
+*{box-sizing: border-box}
+#blog{
+    background-color: #f7f3d1;
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 20px;
+    /*overflow: hidden;*/
+}
+#blog>section>header{
+    margin: 10px 0 20px 0;
+    font-size: 27px;
+    font-weight: bold;
+    /*color: #333333;*/
+
+}
+
+#blog>.logo {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    width: 100px;
+    height: 50px;
+}
+#blog>section>header>.pic{
+    height: 35px;
+    width: 35px;
+}
+/*包含块 */
+.outer{
+    margin: 20px 0 ;
+    height: 150px;
+    width: 150px;
+    background-color: #dddddd;
+    border-width: 0px;
+    border-radius: 7px;
+    display: inline-block;
+    overflow: hidden;
+}
+/*.outer:after{*/
+/*content: "我没做处理";*/
+/*position: absolute;*/
+/*left: 10px;*/
+/*top: -20px;*/
+
+/*}*/
+/*内盒子 */
+.box{
+    height: 50px;
+    width: 50px;
+    background-color: deepskyblue;
+    border-width: 0px;
+    border-radius: 5px;
+
+}
+.b-theme{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+
+}

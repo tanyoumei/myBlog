@@ -1,3 +1,4 @@
+
 .super1{
     width: 300px;
     height: 100px;
@@ -91,6 +92,9 @@
     -moz-box-pack:justify;
     -webkit-box-pack:justify;
     box-pack:justify;
+    -webkit-box-lines:multiple ;
+    -ms-box-lines: multiple;
+    box-lines: multiple;
 }
 .block-s {
     border:5px solid #aaaaaa;

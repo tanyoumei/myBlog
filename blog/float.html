@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="../css/blogPage.css"/>
+    <link rel="stylesheet" href="../css/float.css"/>
+</head>
+<body id="blog">
+<img src="../images/logo.png" alt="" class="logo"/>
+<section>
+    <header>
+        <img src="../images/pencil.png" alt="" class="pic"/>
+        说说我理解的浮动 <small></small>
+    </header>
+    <main>
+        <p>2015/6/12/ 20:08</p>
+         <p>
+             关于浮动，自己的理解一直都很模糊，总感觉他看不见摸不着，但是，你却在用它。
+             于是乎有段时间，看了好多博客文章了。最后还是觉得张鑫旭前辈的文章深得我心，但是呢，前辈修行太高，我跟不上节奏啊。
+             道行太浅，很多地方理解的不是很到位啊
+         </p>
+         <p class="b-theme">
+             一.关于inline-block和float
+         </p>
+         <p>
+            简明扼要的说，就是float是带有方向的inline-block，都带有包裹性，可以做文字自适应，宽度包裹文字
+            <div>下面依次是：没有任何处理 | inline-block | float:left  </div>
+         </p>
+        <div class="outer">
+            <div class="btn">文字</div>
+            <hr/>
+            <div class="btn">长长的文字</div>
+            <hr/>
+            <div class="btn">我是非常长的文字</div>
+        </div>
+        <div class="outer">
+            <div class="btn btn1">文字</div>
+            <hr/>
+            <div class="btn btn1">长长的文字</div>
+            <hr/>
+            <div class="btn btn1">我是非常长的文字</div>
+        </div>
+        <div class="outer">
+            <div class="btn btn2">文字</div>
+            <hr/>
+            <div class="btn btn2">长长的文字</div>
+            <hr/>
+            <div class="btn btn2">我是非常长的文字</div>
+        </div>
+        <p>
+            从第三块也可以看出来div+float 块的高度没有了，所以，float破坏了盒子的高度。但是inline-block有高度哦
+        </p>
+    </main>
+</section>
+</body>
+</html>

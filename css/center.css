@@ -1,0 +1,40 @@
+
+.center1 .outer{
+    overflow: hidden;
+}
+.center1 .box{
+    margin-top: 50px;
+}
+.center2 .outer{
+    padding-top: 50px;
+}
+
+.center3,.center32,.center31{
+    display: inline-block;
+}
+.center3 .outer{
+    line-height: 150px;
+    display: inline-block;
+}
+
+.center31 .outer{
+    line-height: 150px;
+    display: inline-block;
+}
+.center31 .box{
+    display: inline-block;
+    vertical-align: middle;
+}
+.center32 .outer{
+    display: inline-block;
+    line-height: 150px;
+    font-size: 0;
+}
+.center32 .box{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 16px;
+}
+
+
+

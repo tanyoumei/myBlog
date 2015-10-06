@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>我与“垂直居中”的战役</title>
+    <link rel="stylesheet" href="../css/blogPage.css"/>
+    <link rel="stylesheet" href="../css/center.css"/>
+</head>
+<body id="blog">
+    <img src="../images/logo.png" alt="" class="logo"/>
+    <section>
+        <header>
+            <img src="" alt=""/>
+            我与“垂直居中”的战役
+        </header>
+        <main>
+            <p>
+                为什么想要写一下居中尼？大概是因为每次面试的时候，
+                面试官都会问到这个问题，好吧其实我实在想设计CSS规则的人
+                怎么不设计一个属性，不管父元素有没有高度都居中的属性，要是我的话
+                我就设计一个  center-anyway:center;   哈哈哈 ！！！
+            </p>
+            <p>
+                言归正传吧，我知识浅薄，可能很多都只是皮毛，不管了，
+                反正这是我学习的过程， 等我以后翻身农奴把歌唱，不对，翻身
+                农奴成大神，我再来修改。(/▽＼=)
+            </p>
+            <p>
+                <div>声明：</div>
+                <div>1.本文打加粗的字体都是之前概念比较模糊的地方</div>
+                <div>2.文中没有代码，F12自行查看</div>
+                <div>3.父元素（outer） 子元素（box）</div>
+            </p>
+            <p>
+               <div class="b-theme"> 一. 你知道父元素高度</div>
+                <div>
+                    那你就可以手动计算：outer.margin-top=(outer.height-box.height)/2
+                </div>
+                <div class="center1">
+                     <div class="outer">
+                         <div class="box">
+                         </div>
+
+                     </div>
+                </div>
+                或者你也可以计算padding-top,前提要是IE盒子啊，你可以手动*{box-sizing: border-box;}
+                <div class="center2">
+                    <div class="outer">
+                        <div class="box">
+                        </div>
+
+                    </div>
+                 </div>
+            </p>
+            <p>
+                <div class="b-theme">二. 那我们经常遇到的是，你不知道outer的高度，这样的话就没办法去算了</div>
+                <div>不过啦。还是有办法的</div>
+            </p>
+            <div class="center3">
+                <div class="outer">
+                   有一天，我会变老
+                </div>
+            </div>
+            <div class="center31">
+                <div class="outer">
+                    <div class="box">
+                    </div>
+                </div>
+            </div>
+            <div class="center32">
+                <div class="outer">
+                    <div class="box">
+                    </div>
+                </div>
+            </div>
+
+            
+        </main>
+    </section>
+
+</body>
+</html>

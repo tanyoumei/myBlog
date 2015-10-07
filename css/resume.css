@@ -123,6 +123,32 @@ section .s-other small{
 .three .block{
     height: 900px;
 }
+span{
+    display: inline-block;
+    margin-left: 6px;
+    margin-top: 6px;
+}
+span.f-pic{
+    background: url('../images/fig.png') no-repeat -6px -51px;
+    width: 27px;
+    height: 28px;
+}
+span.s-pic{
+    background: url('../images/fig.png') no-repeat -155px -50px;
+    width: 30px;
+    height: 30px;
+}
+span.t-pic{
+    background: url('../images/fig.png') no-repeat -106px -51px;
+    width: 27px;
+    height: 27px;
+}
+span.fo-pic{
+    background: url('../images/fig.png') no-repeat -55px -50px;
+    width: 29px;
+    height: 30px;
+}
+
 
 
 

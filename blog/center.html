@@ -10,8 +10,8 @@
     <img src="../images/logo.png" alt="" class="logo"/>
     <section>
         <header>
-            <img src="../images/pencil.png" alt="" class="pic"/>
-            我与“垂直居中”的战役
+            <span class="apple"></span>
+            <h1>我与“垂直居中”的战役</h1>
         </header>
         <main>
             <p>
@@ -32,7 +32,7 @@
                 <div>3.父元素（outer） 子元素（box）</div>
             </p>
             <p>
-               <h1> 一. 你知道父元素高度</h1>
+               <h3> 一. 你知道父元素高度</h3>
                 <div>
                     那你就可以手动计算：outer.margin-top=(outer.height-box.height)/2
                 </div>
@@ -40,7 +40,6 @@
                      <div class="outer">
                          <div class="box">
                          </div>
-
                      </div>
                 </div>
                 或者你也可以计算padding-top,前提要是IE盒子啊，你可以手动*{box-sizing: border-box;}
@@ -53,8 +52,17 @@
                  </div>
             </p>
             <p>
-                <h1>二. 那我们经常遇到的是，你不知道outer的高度，这样的话就没办法去算了</h1>
-                <div>不过啦。还是有办法的</div>
+                <h3>二. 那我们经常遇到的是，你不知道outer的高度，这样的话就没办法去算了</h3>
+
+            </p>
+            <h4>line-height的垂直居中属性</h4>
+            <p>关于行高，这里在着重强调一遍
+                <div><em>
+                    1.line-height是通过line boxs来表现的。
+                    而无论line boxes所占据的高度是多少（无论比文字大还是比文字小），
+                    其占据的空间的水平中垂线都是与文字内容（基线）对齐。（记住这点非常重要）
+                    2.line boxes 是由inline boxes 的最大高度决
+                </em></div>
             </p>
             <div class="center3">
                 <div class="outer">
@@ -73,6 +81,33 @@
                     </div>
                 </div>
             </div>
+            <p>
+                如果你仔细看了上面那段话，那么你会知道，line-height 是与内容的baseline对齐，
+                而我们需要借助vertical-align:middle来实现真正意义上的对齐,注意：内部必须为inline级别的元素
+                为了说明差异，我把第二个的outer的font-size:100px 为什么要这样做尼？
+                因为vertical-align:middle的定义是：元素的中垂点与父元素的基线加1/2父元素中字母x的高度对齐。
+                这样就能很明显的看出，必须设置font-size:0px 的原因了
+            </p>
+            <h4>display:table-cell + vertical-align:middle</h4>
+            <div class="center4">
+                <div class="outer">
+                    <div class="box">
+                    </div>
+                </div>
+            </div>
+            <h4>绝对定位 absolute</h4>
+            <p>
+                <div>top:50% 负的magin值（这个需要知道父元素的宽度）
+                    <em>height的百分比是相对于父容器的heigh,但是margin-top/bottom/left/right
+                    以及padding-top/bottom/left/right是相对于父容器的width而言的
+                    </em>
+                   </div>
+                <div>top:50% transform:translateY(-50%) 根据自身偏移负的一半宽度</div>
+                <div>top:0 bottom:0 margin:auto (这个原理之前不知是怎么实现的，后来在一个博客上看到的是：
+                    <em>父元素的Height=top+margin-top+border-top+padding-top+height+padding-bottom+border-bottom+margin-bottom+bottom</em>
+                    )你把两个margin-top/bottom:auto 代进去计算
+                </div>
+            </p>
 
             
         </main>

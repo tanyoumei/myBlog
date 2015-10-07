@@ -5,12 +5,12 @@
     width: 80%;
     margin: 0 auto;
     padding-top: 20px;
+    padding-bottom: 50px;
     /*overflow: hidden;*/
 }
 #blog>section>header{
     margin: 10px 0 20px 0;
-    font-size: 27px;
-    font-weight: bold;
+
     /*color: #333333;*/
 
 }
@@ -22,13 +22,13 @@
     width: 100px;
     height: 50px;
 }
-#blog>section>header>.pic{
-    height: 35px;
-    width: 35px;
+#blog>section>header>span{
+    display: inline-block;
 }
 /*包含块 */
 .outer{
-    margin: 20px 0 ;
+    position: relative;
+    margin: 10px 10px ;
     height: 150px;
     width: 150px;
     background-color: #dddddd;
@@ -37,13 +37,7 @@
     display: inline-block;
     overflow: hidden;
 }
-/*.outer:after{*/
-/*content: "我没做处理";*/
-/*position: absolute;*/
-/*left: 10px;*/
-/*top: -20px;*/
 
-/*}*/
 /*内盒子 */
 .box{
     height: 50px;
@@ -51,11 +45,43 @@
     background-color: deepskyblue;
     border-width: 0px;
     border-radius: 5px;
-
 }
 h1{
+    display: inline-block;
+    font-size: 27px;
+    font-weight: bold;
+}
+h3{
     font-size: 18px;
     font-weight: bold;
     margin: 10px 0;
-
+}
+h4{
+    font-size: 15px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+/*背景图标定位 */
+span.unbrella{
+    background: url('../images/fig.png') no-repeat -117px -2px;
+    width: 44px;
+    height: 45px;
+}
+span.apple{
+    background: url('../images/fig.png') no-repeat -4px -7px;
+    width: 32px;
+    height: 36px;
+}
+span.pencil{
+    background: url('../images/fig.png') no-repeat -186px -3px;
+    width: 33px;
+    height: 38px;
+}
+span.baba{
+    background: url('../images/fig.png') no-repeat -60px -2px;
+    width: 33px;
+    height: 47px;
+}
+p {
+    line-height: 20px;
 }

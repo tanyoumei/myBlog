@@ -10,22 +10,27 @@
 <img src="../images/logo.png" alt="" class="logo"/>
 <section>
     <header>
-        <img src="../images/pencil.png" alt="" class="pic"/>
-        说说我理解的浮动 <small></small>
+        <span class="baba"></span>
+       <h1>说说我理解的浮动</h1>
     </header>
     <main>
         <p>2015/6/12/ 20:08</p>
          <p>
              关于浮动，自己的理解一直都很模糊，总感觉他看不见摸不着，但是，你却在用它。
-             于是乎有段时间，看了好多博客文章了。最后还是觉得张鑫旭前辈的文章深得我心，但是呢，前辈修行太高，我跟不上节奏啊。
+             于是乎有段时间，看了好多博客文章了。最后还是觉得张鑫旭前辈的文章深得我心，"只是用来让文字环绕图片"但是呢，前辈修行太高，我跟不上节奏啊。
              道行太浅，很多地方理解的不是很到位啊
          </p>
-         <h1>
-             一.关于inline-block和float
-         </h1>
+         <h3>
+             一.关于inline-block和float（包裹性）
+         </h3>
+        <p>
+            先说说包裹性好了，最开始也是在张鑫旭的博客中看到“包裹性”，包裹属性：absolute float
+            inline overflow  zoom 后边两个在清除浮动的时候说。
+
+        </p>
          <p>
-            简明扼要的说，就是float是带有方向的inline-block，都带有包裹性，可以做文字自适应，宽度包裹文字
-            <div>下面依次是：没有任何处理 | inline-block | float:left  </div>
+            简明扼要的说，就是float是带有方向的inline-block，都带有包裹性，可以做文字自适应,在没有显示的设置宽度的时候，宽度会自动包裹文字
+            <div>下面依次是：没有任何处理 | inline-block | float:left | position:absolute </div>
          </p>
         <div class="outer">
             <div class="btn">文字</div>
@@ -48,9 +53,100 @@
             <hr/>
             <div class="btn btn2">我是非常长的文字</div>
         </div>
+        <div class="outer">
+            <div class="btn btn3">文字</div>
+            <hr/>
+            <div class="btn btn3">长长的文字</div>
+            <hr/>
+            <div class="btn btn3">我是非常长的文字</div>
+        </div>
         <p>
             从第三块也可以看出来div+float 块的高度没有了，所以，float破坏了盒子的高度。但是inline-block有高度哦
         </p>
+        <h3>
+            二.float做了什么（破坏性）
+        </h3>
+        <p>会用之后，我们要知道为什么会产生这样的影响，包含块要是没有显示的指明height,
+            那么，它的高度将时候它内部的inline boxs之中最高的那个决定的，so what?
+            也就是我们会看到下面这种现象
+        </p>
+        <div class="outer1">
+            <div class="s_out">
+                <div class="box in-line"></div>有一天，我会变老
+            </div>
+        </div>
+        <div class="outer1">
+            <div class="s_out">
+                <div class="box float"></div>有一天，我会变老
+            </div>
+        </div>
+        <p>
+            看吧，第一个的高度是蓝色块的高度，第二个包含块的高度就变成了文字的高度了，
+            这里必须要引申一下张鑫旭前辈的文章，
+            <a href="http://www.zhangxinxu.com/wordpress/?p=384">css行高line-height的一些深入理解及应用</a>
+            关于line-height的理解，我看了这篇文章不止10遍
+            <em>
+                1.line-height是通过line boxs来表现的。
+                而无论line boxes所占据的高度是多少（无论比文字大还是比文字小），
+                其占据的空间都是与文字内容公用水平中垂线的。（记住这点非常重要）
+                2.line boxes 是由inline boxes 组成的
+            </em>
+            所以尼，单行文字居中那是没问题的，但是多行文字的话，意味着有很多个line boxs，
+            那么我们只需要那那个标签加上inline-block就可以了,更多居中的问题可以参照这篇
+            <a href="./center.html">我与“垂直居中”的战役</a>
+
+            你都看到了，float的元素高度为零，但是宽度却没有改变，我们叫它"高度塌陷"
+        </p>
+        <h3>三.清除浮动:空标签clear | after伪类 | inline-block | float:left | overflow:除了visiable | absolute</h3>
+        <div class="outer1">
+            <div class="s_out">
+                <div class="box float"></div>有一天，我会变老
+            </div>
+        </div>
+        <p>清楚浮动，准确的说是清楚浮动带来的影响，</p>
+        <p>我们把上边那个图拿下来，你肯定是不想看到这样的场面的，你想看到的是背景颜色也包含蓝色块
+            那肯定是要清楚浮动带来的影响，我们之前的包裹性都是可以用来清除浮动的。
+        </p>
+        <h4>| 空标签clear 这个没有疑问  </h4>
+        <div class="outer1">
+            <div class="s_out">
+                <div class="box float"></div>有一天，我会变老
+                <div class="clear"></div>
+            </div>
+        </div>
+        <h4>| after伪类</h4>
+        <div class="outer1">
+            <!--todo-->
+            <div class="s_out">
+                <div class="box float"></div>有一天，我会变老
+            </div>
+        </div>
+        <h4>| inline-block</h4>
+        <div class="outer1">
+            <div class="s_out clear1">
+                <div class="box float "></div>有一天，我会变老
+            </div>
+        </div>
+        <h4>| float:left</h4>
+        <div class="outer1">
+            <div class="s_out float">
+                <div class="box float"></div>有一天，我会变老
+            </div>
+        </div>
+        <h4>| overflow:除了visiable</h4>
+        <div class="outer1">
+            <div class="s_out clear2">
+                <div class="box float "></div>有一天，我会变老
+            </div>
+        </div>
+        <h4>| position:absolute</h4>
+        <div class="outer1">
+            <div class="s_out clear3">
+                <div class="box float "></div>有一天，我会变老
+            </div>
+        </div>
+
+
     </main>
 </section>
 </body>

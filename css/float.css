@@ -1,19 +1,6 @@
 
-.outer{
-    position: relative;
-    margin: 20px ;
-    height: 150px;
-    width: 150px;
-    background-color: #dddddd;
-    border-width: 0px;
-    border-radius: 7px;
-    display: inline-block;
-    overflow: hidden;
-}
-
 
 .btn{
-    /*float: left;*/
     margin: 5px;
     padding:2px;
     background-color: #a0a0a0;
@@ -24,3 +11,45 @@
 .btn2{
     float: left;
 }
+.btn3{
+    position: absolute;
+}
+.outer1{
+    margin: 10px ;
+    /*width: 200px;*/
+    height: 100px;
+    border:0px solid #dddddd;
+    border-radius: 7px;
+    display: inline-block;
+    overflow: hidden;
+}
+.s_out{
+    background-color: #dddddd;
+    border-width: 0px;
+    border-radius: 7px;
+}
+.in-line{
+    display: inline-block;
+}
+.float{
+    float: left;
+}
+.clear{
+    clear: both;
+}
+/*todo*/
+.s_out:after{
+    content: "";
+    clear: both;
+
+}
+.clear1{
+    display: inline-block;
+}
+.clear2{
+    overflow: hidden;
+}
+.clear3{
+    position: absolute;
+}
+

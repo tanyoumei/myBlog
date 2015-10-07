@@ -1,3 +1,12 @@
+.outer:after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    top: 50%;
+    left: -1px;
+    background-color: red;
+}
 
 .center1 .outer{
     overflow: hidden;
@@ -9,24 +18,22 @@
     padding-top: 50px;
 }
 
-.center3,.center32,.center31{
+.center3,.center30,.center32,.center31{
     display: inline-block;
 }
 .center3 .outer{
     line-height: 150px;
     display: inline-block;
 }
-
 .center31 .outer{
     line-height: 150px;
-    display: inline-block;
+    font-size: 100px;
 }
 .center31 .box{
     display: inline-block;
     vertical-align: middle;
 }
 .center32 .outer{
-    display: inline-block;
     line-height: 150px;
     font-size: 0;
 }
@@ -34,6 +41,10 @@
     display: inline-block;
     vertical-align: middle;
     font-size: 16px;
+}
+.center4 .outer{
+    display: table-cell;
+    vertical-align: middle;
 }
 
 
